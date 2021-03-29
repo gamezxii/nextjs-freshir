@@ -1,0 +1,94 @@
+.ul {
+  font-size: 1rem;
+}
+
+.form {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.contactForm_input {
+  margin: 0 0 1em;
+}
+
+.contactForm_input > label {
+  display: block;
+  margin: 0 0 0.28571429rem;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.92857143em;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.ui.form {
+  width: 100%;
+  position: relative;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-flex;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.ui input:not([type]),
+.ui input[type="date"],
+.ui input[type="datetime-local"],
+.ui input[type="email"],
+.ui input[type="file"],
+.ui input[type="number"],
+.ui input[type="password"],
+.ui input[type="search"],
+.ui input[type="tel"],
+.ui input[type="text"],
+.ui input[type="time"],
+.ui input[type="url"],
+.ui textarea {
+  font-family: Lato, Helvetica Neue, Arial, Helvetica, sans-serif;
+  margin: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  line-height: 1.21428571em;
+  padding: 0.67857143em 1em;
+  font-size: 1em;
+  background: #fff;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 0.28571429rem;
+  box-shadow: inset 0 0 0 0 transparent;
+  transition: color 0.1s ease, border-color 0.1s ease;
+  width: 100%;
+}
+
+.ui input:focus,
+.ui textarea:focus {
+  border-color: #85b7d9;
+  box-shadow: none;
+}
+
+.button {
+  line-height: 1.5;
+  padding: 5px 20px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.192);
+}
+
+.error {
+  border: solid 1px #dfdfda;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  color: #9f3a38;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.loading {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+}
