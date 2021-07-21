@@ -1,8 +1,8 @@
 import styles from "./contactus.module.css";
 import React, { useState } from "react";
-import Loader from "./spinner";
+//import Loader from "./spinner";
 
-export default function contactus() {
+export default function Contactus() {
   const [isLoading, setIsLoading] = useState(false);
   const [validation, setValidation] = useState(false);
   const [formContact, setFormContact] = useState({
@@ -31,7 +31,13 @@ export default function contactus() {
   };
 
   const handleUpdateToserver = async () => {
-    await fetch("http://localhost:9000/contactus", {
+    setFormContact({
+      name: "",
+      phonenumber: "",
+      email: "",
+      message: "",
+    });
+    /* await fetch("http://localhost:9000/contactus", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -46,11 +52,11 @@ export default function contactus() {
           setFormContact({ name: "", phonenumber: "", email: "", message: "" });
         }, 3000);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err)); */
   };
   return (
     <div style={{ marginTop: 30, textAlign: "center" }}>
-      <div className={styles.loading}>{isLoading ? <Loader /> : ""}</div>
+      {/* <div className={styles.loading}>{isLoading ? <Loader /> : ""}</div> */}
       <h1>Contact Us</h1>
       <form className={`${styles.ul} ${styles.form}`} onSubmit={handleSubmit}>
         <div className={`${styles.field} ${styles.contactForm_input}`}>

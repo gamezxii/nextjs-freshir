@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Navbar from "./components/header";
-import Ccontactus from "./components/contactus";
+import Contactus from "./components/contactus";
 import dynamic from "next/dynamic";
 import styles from "./index.module.css";
 import BoxImage from "./components/boxImage";
@@ -25,6 +25,14 @@ export default function Home() {
           href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
           crossorigin="anonymous"
+        />
+        <script
+          type="module"
+          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+        />
+        <script
+          nomodule
+          src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
         />
       </Head>
 
@@ -377,12 +385,7 @@ export default function Home() {
               </button>
             </a>
           </div>
-          <Ccontactus />
-          <h1 style={{ marginTop: 30 }}>
-            <Link href="/contact/">
-              <a style={{ color: "#000" }}>Contactus Page</a>
-            </Link>
-          </h1>
+          <Contactus />
         </div>
       </main>
 

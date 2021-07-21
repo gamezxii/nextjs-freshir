@@ -1,6 +1,4 @@
 import React from "react";
-import "@google/model-viewer";
-
 export default function Demo() {
   var slideIndex = 0;
 
@@ -61,17 +59,8 @@ export default function Demo() {
               style={{ width: "100%", height: "480px" }}
               src="https://cdn.glitch.com/21c34e33-9493-469f-b7b7-5849ebaadb61%2FAirCon_01_android.glb"
               ios-src="https://cdn.glitch.com/21c34e33-9493-469f-b7b7-5849ebaadb61%2FAirCon_01_ios.usdz"
-              min-camera-orbit="auto 50% auto"
-              max-camera-orbit="auto 50% 100%"
-              min-field-of-view="25deg"
-              max-field-of-view="95deg"
-              ar="true"
-              exposure="1.2"
-              shadow-intensity="0.25"
-              camera-controls="true"
-              auto-rotate="true"
-              data-js-focus-visible=""
-              ar-status="not-presenting"
+              auto-rotate
+              camera-controls
             ></model-viewer>
             <div className="slideshow-caption">
               <h3 style={{ color: "rgba(0, 0, 0, 0.3)" }}>FAU</h3>
@@ -84,17 +73,8 @@ export default function Demo() {
               style={{ width: "100%", height: "480px" }}
               src="https://cdn.glitch.com/21c34e33-9493-469f-b7b7-5849ebaadb61%2FAirCon_02_android.glb"
               ios-src="https://cdn.glitch.com/21c34e33-9493-469f-b7b7-5849ebaadb61%2FAirCon_02-ios.usdz"
-              min-camera-orbit="auto 50% auto"
-              max-camera-orbit="auto 50% 100%"
-              min-field-of-view="25deg"
-              max-field-of-view="95deg"
-              ar="true"
-              exposure="1.2"
-              shadow-intensity="0.25"
-              camera-controls="true"
-              auto-rotate="true"
-              data-js-focus-visible=""
-              ar-status="not-presenting"
+              auto-rotate
+              camera-controls
             ></model-viewer>
             <div className="slideshow-caption">
               <h3 style={{ color: " rgba(0, 0, 0, 0.3)" }}>HCU-Lite</h3>
@@ -107,17 +87,8 @@ export default function Demo() {
               style={{ width: "100%", height: "480px" }}
               src="https://cdn.glitch.com/21c34e33-9493-469f-b7b7-5849ebaadb61%2FAirCon_02_android.glb"
               ios-src="https://cdn.glitch.com/21c34e33-9493-469f-b7b7-5849ebaadb61%2FAirCon_02-ios.usdz"
-              min-camera-orbit="auto 50% auto"
-              max-camera-orbit="auto 50% 100%"
-              min-field-of-view="25deg"
-              max-field-of-view="95deg"
-              ar="true"
-              exposure="1.2"
-              shadow-intensity="0.25"
-              camera-controls="true"
-              auto-rotate="true"
-              data-js-focus-visible=""
-              ar-status="not-presenting"
+              auto-rotate
+              camera-controls
             ></model-viewer>
             <div className="slideshow-caption">
               <h3 style={{ color: " rgba(0, 0, 0, 0.3)" }}>HCU-Lite</h3>
